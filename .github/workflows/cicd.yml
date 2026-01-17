@@ -26,7 +26,7 @@ jobs:
     
     - name: Restore .env
       run: |
-       if [ -f tmp/env_backup ]; then mv /tmp/env_backup .env; fi
+       if [ -f /tmp/env_backup ]; then mv /tmp/env_backup .env; fi
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
