@@ -19,7 +19,7 @@ app.listen(PORT, () => {
 });
 
 app.get("/", (req, res) => {
-  res.json({ message: "Backend is running" });
+  res.json({ message: "UPDATE: Backend is running" });
 });
 
 
